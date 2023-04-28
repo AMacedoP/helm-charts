@@ -6,6 +6,50 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.2.0
+    created: "2023-04-28T21:47:30.409501724Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: 5802aaf026e21ea07f24a06a471d39bee4e9936f4f0b8b1e7e623b1bda9ce1c9
+    home: https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/wordpress
+    - https://wordpress.org/
+    urls:
+    - https://github.com/AMacedoP/helm-charts/releases/download/wordpress-16.0.3/wordpress-16.0.3.tgz
+    version: 16.0.3
+  - annotations:
+      category: CMS
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.2.0
     created: "2023-04-28T21:28:44.478301132Z"
     dependencies:
     - condition: memcached.enabled
@@ -45,4 +89,4 @@ entries:
     urls:
     - https://github.com/AMacedoP/helm-charts/releases/download/wordpress-16.0.2/wordpress-16.0.2.tgz
     version: 16.0.2
-generated: "2023-04-28T21:28:44.478317532Z"
+generated: "2023-04-28T21:47:30.409559424Z"
